@@ -55,3 +55,15 @@ input[type="text"] {
         transform: scale(0.9);
     }
 }
+select {
+    @include theme(background, secondary-background);
+    @include theme(color, text);
+    border: none;
+    border-radius: 7px;
+    padding: 6px 12px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
